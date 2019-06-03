@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="panel.css"></link>
+</head>
+<body>
+    <div>
+        <div id="controls-wrapper">
+            <button id="clear">⃠</button>
+            <span>Total requests: </span>
+            <span id="total-requests">0</span>
+            <button id="pause">❙❙</button>
+            <span id="paused-message">Paused, not listening to network...</span>
+        </div>
+        <table id="request-table">
+            <tr>
+                <th>Count</th>
+                <th class="request-url-col">Request url</th>
+                <th>Count</th>
+                <th class="request-url-col">Unique Origin file</th>
+            </tr>
+        </table>
+    </div>
+    <script src="./panel.js"></script>
+</body>
+</html>

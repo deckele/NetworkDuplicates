@@ -1,0 +1,93 @@
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+    font-size: 1.5em;
+    color: grey;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+    font-weight: bold;
+}
+
+button:active {
+    color: #39c;
+    font-weight: bold;
+}
+
+#pause {
+    border: 1px solid grey;
+    padding: 0 4px;
+    border-radius: 6px;
+    width: 24px;
+    color: #e24a4a;
+}
+
+#pause:hover {
+    color: #a53838;
+}
+
+#pause[paused] {
+    color: #43d057;
+}
+
+#pause[paused]:hover {
+    color: #3ab34b;
+}
+
+#paused-message {
+    visibility: hidden;
+    color: #e24a4a;
+    margin-left: 5px;
+}
+
+[paused] + #paused-message {
+    visibility: visible;
+}
+
+#total-requests {
+    margin-right: 20px;
+}
+
+#request-table {
+    text-align: left;
+}
+
+tr:hover:not(:first-child) {
+    background-color: #f6f8fa;
+}
+
+.request-url-col {
+    word-break: break-all;
+    min-width: 250px;
+    padding: 0 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    word-break: break-all;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    left: 10px;
+    top: -5px;
+    z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
